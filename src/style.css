@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Qwitcher';
+    src: url('./QwitcherGrypen-Bold.ttf');
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'roboto', sans-serif;
+}
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(29, 29, 29);
+}
+#cover {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: blur(2px);
+    position: absolute;
+    z-index: -1;
+}
+#header {
+    height: 100px;
+    font-family: Qwitcher;
+    font-size: 5em;
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#menudiv {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40%;
+    padding-right: 40%;
+    height: 50px;
+    width: 100%;
+}
+#view {
+    background-color: rgba(29, 29, 29, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    padding: 30px;
+    text-align: center;
+    top: 200px;
+    height: 70%;
+    width: 50%;
+    border-radius: 15px;
+}
+#view.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    height: auto;
+}
+#view.menu .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(29, 29, 29, .6);
+    border-radius: 10px;
+    height: 300px;
+}
+#view.menu .item img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#chef {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+button {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 45px;
+}
+.active {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border-bottom: 3px white solid;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
